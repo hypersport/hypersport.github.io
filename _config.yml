@@ -23,13 +23,13 @@ timezone: Asia/Shanghai
 
 title: Hypersport                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: 生活是记住的日子，而不是过去的日子   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ''
+url: 'https://hypersport.club'
 
 github:
   username: hypersport             # change to your github username
@@ -116,7 +116,7 @@ assets:
     env: development         # [development|production]
 
 pwa:
-  enabled: true   # the option for PWA feature
+  enabled: false   # the option for PWA feature
 
 paginate: 10
 
