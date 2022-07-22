@@ -4,7 +4,7 @@ author: hypersport
 date: 2021-10-10 10:10:10 +0800
 toc: false
 categories: [Swift]
-tags: [全角, 半角]
+tags: [字符]
 render_with_liquid: false
 ---
 
