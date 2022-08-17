@@ -24,7 +24,7 @@ collections.namedtuple(typename, field_names, *, rename=False, defaults=None, mo
 
 **`defaults`**：默认 `None`，按 `field_names` 中的名字一次赋默认值。
 
-`module`：定义类的模块名
+**`module`**：定义类的模块名
 
 ### 举例
 
