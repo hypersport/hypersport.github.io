@@ -30,10 +30,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-<<<<<<< HEAD:.github/workflows/pages-deploy.yml
-          submodules: true
-          fetch-depth: 0  # for posts's lastmod
-=======
           fetch-depth: 0
           # submodules: true
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
@@ -42,7 +38,6 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v1
->>>>>>> f1d9e99bc02d3cd0a6b0cd1beac545f0cc7a24f8:.github/workflows/pages-deploy.yml.hook
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
