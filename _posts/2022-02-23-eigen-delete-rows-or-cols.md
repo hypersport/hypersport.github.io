@@ -11,11 +11,11 @@ render_with_liquid: false
 ```cpp
 // Delete one row or one column from a matrix
 // dim: 1 -> row; 2 -> col
-template <typename T>
-void DeleteRowOrCol(T &matrix, const unsigned index, const int dim)
+template<typename Derived>
+void DeleteRowOrCol(Eigen::PlainObjectBase<Derived> &matrix, const unsigned index, const int dim)
 {
-    unsigned int rows = matrix.rows();
-    unsigned int cols = matrix.cols();
+    unsigned rows = matrix.rows();
+    unsigned cols = matrix.cols();
     if (dim == 1) {
         if (index < rows) {
             rows -= 1;
@@ -33,8 +33,8 @@ void DeleteRowOrCol(T &matrix, const unsigned index, const int dim)
 
 // Delete multi rows or multi columns from a matrix
 // dim: 1 -> row; 2 -> col
-template <typename T>
-void DeleteRowsOrCols(T &matrix, const std::vector<unsigned> &indexes, const int dim)
+template<typename Derived>
+void DeleteRowsOrCols(Eigen::PlainObjectBase<Derived> &matrix, const std::vector<unsigned> &indexes, const int dim)
 {
     if (dim != 1 || dim != 2) return;
     unsigned rows = matrix.rows();
