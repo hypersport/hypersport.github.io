@@ -11,19 +11,23 @@ render_with_liquid: false
 ```cpp
 // Delete one row or one column from a matrix
 // dim: 1 -> row; 2 -> col
-template<typename Derived>
+template <typename Derived>
 void DeleteRowOrCol(Eigen::PlainObjectBase<Derived> &matrix, const unsigned index, const int dim)
 {
     unsigned rows = matrix.rows();
     unsigned cols = matrix.cols();
-    if (dim == 1) {
-        if (index < rows) {
+    if (dim == 1)
+    {
+        if (index < rows)
+        {
             rows -= 1;
             matrix.block(index, 0, rows - index, cols) = matrix.bottomRows(rows - index);
         }
     }
-    if (dim == 2) {
-        if (index < cols) {
+    if (dim == 2)
+    {
+        if (index < cols)
+        {
             cols -= 1;
             matrix.block(0, index, rows, cols - index) = matrix.rightCols(cols - index);
         }
@@ -33,13 +37,15 @@ void DeleteRowOrCol(Eigen::PlainObjectBase<Derived> &matrix, const unsigned inde
 
 // Delete multi rows or multi columns from a matrix
 // dim: 1 -> row; 2 -> col
-template<typename Derived>
-void DeleteRowsOrCols(Eigen::PlainObjectBase<Derived> &matrix, const std::vector<unsigned> &indexes, const int dim)
+template <typename Derived>
+void DeleteRowsOrCols(
+    Eigen::PlainObjectBase<Derived> &matrix, const std::vector<unsigned> &indexes, const int dim)
 {
-    if (dim != 1 || dim != 2) return;
+    if (dim != 1 || dim != 2) return;   // guard clauses
     unsigned rows = matrix.rows();
     unsigned cols = matrix.cols();
-    for (const unsigned index : indexes) {
+    for (const unsigned index : indexes)
+    {
         int delta = rows - matrix.rows() + cols - matrix.cols();
         DeleteRowOrCol(matrix, index - delta, dim);
     }
