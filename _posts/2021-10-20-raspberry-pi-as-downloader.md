@@ -8,13 +8,13 @@ tags: [树莓派, 下载器]
 render_with_liquid: false
 ---
 
-**transmisson-daemon** 比其他客户端使用更少的资源，非常适合服务器，还可以通过 Web 界面和终端程序进行远程控制，支持本地对等发现、完全加密、DHT、µTP、PEX 和 Magnet Link 等。
+**transmission-daemon** 比其他客户端使用更少的资源，非常适合服务器，还可以通过 Web 界面和终端程序进行远程控制，支持本地对等发现、完全加密、DHT、µTP、PEX 和 Magnet Link 等。
 
-首先，通过 **apt** 安装软件包，这里注意安装的是 **transmisson-daemon**：
+首先，通过 **apt** 安装软件包，这里注意安装的是 **transmission-daemon**：
 
 ```bash
 sudo apt-get update
-sudo apt-get install transmisson-daemon
+sudo apt-get install transmission-daemon
 ```
 
 然后修改 `/etc/transmission-daemon/` 目录下的配置文件 `settings.json`
