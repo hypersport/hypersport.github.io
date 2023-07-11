@@ -8,7 +8,7 @@ tags: [SSH]
 render_with_liquid: false
 ---
 
-云服务器使用 `SSH` 密码登录，以 `Ubuntu` 为例，适用于 `Oracle`、`Google` 等
+云服务器使用 *SSH* 密码登录，以 *Ubuntu* 为例，适用于 *Oracle*、*Google* 等
 
 ```bash
 # 切换root账户
