@@ -34,7 +34,7 @@ sudo apt-get install transmission-daemon
     "blocklist-url": "http://www.example.com/blocklist",
     "cache-size-mb": 4,
     "dht-enabled": true,
-    "download-dir": "/home/ubuntu/transmission", # 下载目录 
+    "download-dir": "/home/hypersport/transmission", # 下载目录 
     "download-limit": 100,
     "download-limit-enabled": 0,
     "download-queue-enabled": true,
@@ -42,7 +42,7 @@ sudo apt-get install transmission-daemon
     "encryption": 1,
     "idle-seeding-limit": 30,
     "idle-seeding-limit-enabled": false,
-    "incomplete-dir": "/home/ubuntu/transmission", # 下载未完成目录
+    "incomplete-dir": "/home/hypersport/transmission", # 下载未完成目录
     "incomplete-dir-enabled": true,
     "lpd-enabled": false,
     "max-peers-global": 200,
@@ -73,7 +73,7 @@ sudo apt-get install transmission-daemon
     "rpc-password": "{f3052668aaa8487e22c777327ad83dc79ed25ff6mhRGXhjC", # 这里设置 web 访问的秘密，设置成明文，重新启动后会自动变成密文
     "rpc-port": 9091, # web 访问端口
     "rpc-url": "/transmission/",
-    "rpc-username": "ubuntu", # web 访问用户名
+    "rpc-username": "hypersport", # web 访问用户名
     "rpc-whitelist": "*.*.*.*",
     "rpc-whitelist-enabled": true,
     "scrape-paused-torrents-enabled": true,
