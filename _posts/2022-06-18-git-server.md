@@ -19,7 +19,7 @@ sudo apt install git -y
 ### 2. 添加 *git* 用户
 
 ```bash
-ssudo adduser git
+sudo adduser git
 ```
 
 ### 3. 给 *git* 用户创建 *.ssh* 目录并设置相应的权限
@@ -29,11 +29,11 @@ su git                            # 切换用户
 cd                                # 切换到 git 用户目录
 mkdir .ssh                        # 创建 .ssh 目录
 chmod 700 .ssh                    # 修改权限
-touch .ssh/authorized_keys        # 创建认证文件
+touch .ssh/authorized_keys        # 创建 authorized_keys
 chmod 600 .ssh/authorized_keys    # 修改权限
 ```
 
-之后将需要使用 *git* 服务的用户的 *public key* 拷贝到上述认证文件中
+之后将需要使用 *git* 服务的用户的 *public key* 拷贝到上述 *authorized_keys* 文件中
 
 ```bash
 cat id_rsa.pub >> ~/.ssh/authorized_keys
