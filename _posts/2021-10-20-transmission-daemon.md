@@ -1,10 +1,10 @@
 ---
-title: 使用树莓派作为种子下载服务器
+title: Transmission 配置种子下载服务器
 author: hypersport
 date: 2021-10-20 20:20:20 +0800
 toc: false
 categories: [Linux]
-tags: [树莓派, 下载器]
+tags: [transmission]
 render_with_liquid: false
 ---
 
@@ -101,4 +101,4 @@ sudo apt-get install transmission-daemon
 sudo systemctl start transmission-daemon.service
 ```
 
-之后在浏览器中访问 *raspberry-ip:9091* 进去管理界面
+之后在浏览器中访问 *host-ip:9091* 进去管理界面
