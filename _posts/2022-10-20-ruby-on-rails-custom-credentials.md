@@ -2,6 +2,7 @@
 title: Ruby on Rails 自定义安全凭证
 author: hypersport
 date: 2022-10-20 10:20:30 +0800
+toc: false
 categories: [Ruby]
 tags: [Ruby on Rails]
 render_with_liquid: false
