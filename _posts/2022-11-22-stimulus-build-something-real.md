@@ -5,6 +5,7 @@ date: 2022-11-22 11:22:33 +0800
 categories: [前端]
 tags: [JavaScript, Stimulus]
 render_with_liquid: false
+img_path: /assets/img/posts/2022-11-22-stimulus-build-something-real/
 ---
 
 在前面的章节中实现了第一个控制器，并了解了 *Stimulus* 如何将 *HTML* 连接到 *JavaScript*，现在通过重新实现 *Basecamp* 网站上一个的控制器来看一下如何在真实应用中使用 *Stimulus*。
@@ -71,6 +72,7 @@ export default class extends Controller {
 ```
 
   > **static targets** 的作用：
+  >
     >> 当 *Stimulus* 加载控制器类时，会在名为 *"targets"* 的静态数组中查找目标名称字符串。对于数组中的每个目标名称，*Stimulus* 都会向控制器添加三个新属性：
     >> - *this.sourceTarget* 是控制器作用域中的第一个源目标。如果没有源目标，访问该属性将引发错误。
     >> - *this.sourceTargets* 是控制器作用域内所有源目标的数组。
