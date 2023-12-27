@@ -72,12 +72,12 @@ export default class extends Controller {
 ```
 
   > **static targets** 的作用：
-  >
+  >>
     >> 当 *Stimulus* 加载控制器类时，会在名为 *"targets"* 的静态数组中查找目标名称字符串。对于数组中的每个目标名称，*Stimulus* 都会向控制器添加三个新属性：
     >> - *this.sourceTarget* 是控制器作用域中的第一个源目标。如果没有源目标，访问该属性将引发错误。
     >> - *this.sourceTargets* 是控制器作用域内所有源目标的数组。
     >> - *this.hasSourceTarget* 如果存在源目标则为 *true*，否则为 *false*。
-  >
+  >>
   > 更多关于 [target](https://stimulus.hotwired.dev/reference/targets) 的文档。
 
 ### 连接 *Action*
