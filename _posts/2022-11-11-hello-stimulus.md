@@ -68,7 +68,7 @@ export default class extends Controller {
 </div>
 ```
 
-标识符充当l了元素和控制器之间的链接，在本例中，*hello* 标识符告诉 *Stimulus* 在 `hello_controller.js` 中创建控制器类的实例。可以在 [安装指南](https://stimulus.hotwired.dev/handbook/installing) 中了解自动控制器加载的工作原理。
+标识符充当l了元素和控制器之间的链接，在本例中，*hello* 标识符告诉 *Stimulus* 在 `hello_controller.js` 中创建控制器类的实例。可以在 [安装指南](https://pythonista.cn/posts/installing-stimulus-in-application) 中了解自动控制器加载的工作原理。
 
 ### 测试控制器是否工作
 
