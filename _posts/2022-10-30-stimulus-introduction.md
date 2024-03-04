@@ -8,7 +8,7 @@ tags: [JavaScript, Stimulus]
 render_with_liquid: false
 ---
 
-### 关于 Stimulus
+### 关于 *Stimulus*
 
 *Stimulus* 是一个有着谦虚目标的 *JavaScript* 框架，与其他前端框架不同，*Stimulus* 旨在通过使用简单的注释将 *JavaScript* 对象连接到页面上的元素来增强静态或服务端渲染的已有的 *HTML*。
 
