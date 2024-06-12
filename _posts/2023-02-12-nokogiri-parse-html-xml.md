@@ -50,7 +50,7 @@ doc = Nokogiri::HTML(URI.open("http://www.threescompany.com/"))
 > **⚠** 解析不受信任的文档时设置 *DTDLOAD* 是 **不安全** 的
 
 - **HUGE** - 跳过文档大小或 *DOM* 深度的硬编码限制
-> **⚠** 设置 *HUGE* 可能会导致性能降低
+> **⚠** 解析不受信任的文档时设置 *HUGE* 是 **不安全** 的
 
 其他常用的 [解析选项](https://nokogiri.org/rdoc/Nokogiri/XML/ParseOptions)：
 
